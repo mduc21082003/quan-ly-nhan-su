@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AdminLTE 3 | Dashboard</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="../../resources/plugins/fontawesome-free/css/all.min.css"
+    />
+    <!-- Ionicons -->
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../resources/dist/css/adminlte.min.css" />
+    <!-- overlayScrollbars -->
+    <link
+      rel="stylesheet"
+      href="../../resources/plugins/overlayScrollbars/css/OverlayScrollbars.min.css"
+    />
+  </head>
+  <body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+      <!-- Preloader -->
+      <div
+        class="preloader flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="animation__shake"
+          src="../../resources/dist/img/AdminLTELogo.png"
+          alt="AdminLTELogo"
+          height="60"
+          width="60"
+        />
+      </div>
+
+      <div id="header"></div>
+      <div id="sidebar"></div>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col mb-3">
+                <h1 class="m-0">Nhân viên</h1>
+                <ol class="breadcrumb text-center">
+                  <li class="breadcrumb-item">
+                    <a href="../dashboard/index.html">Trang chủ</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="./index.html">Nhân viên</a>
+                  </li>
+                  <li class="breadcrumb-item active">Xem chi tiết</li>
+                </ol>
+                <div
+                  class="d-flex justify-content-center align-items-center vh-100"
+                >
+                  <div class="card mt-5 w-50">
+                    <div class="card-header">
+                      <h3>Xem chi tiết thông tin nhân viên</h3>
+                    </div>
+                    <div class="card-body">
+                      <form>
+                        <!-- Họ và tên -->
+                        <div class="mb-3">
+                          <label for="fullname" class="form-label"
+                            >Họ và tên</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="fullname"
+                            disabled
+                          />
+                        </div>
+
+                        <!-- Ngày sinh -->
+                        <div class="mb-3">
+                          <label for="dob" class="form-label">Ngày sinh</label>
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="dob"
+                            disabled
+                          />
+                        </div>
+
+                        <!-- Giới tính -->
+                        <div class="mb-3">
+                          <label for="gender" class="form-label"
+                            >Giới tính</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="gender"
+                            disabled
+                          />
+                        </div>
+
+                        <!-- Số điện thoại -->
+                        <div class="mb-3">
+                          <label for="phone" class="form-label"
+                            >Số điện thoại</label
+                          >
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="phone"
+                            disabled
+                          />
+                        </div>
+
+                        <!-- Hộ khẩu thường trú -->
+                        <div class="mb-3">
+                          <label for="address" class="form-label"
+                            >Hộ khẩu thường trú</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="address"
+                            disabled
+                          />
+                        </div>
+
+                        <!-- Phòng ban -->
+                        <div class="mb-3">
+                          <label for="department" class="form-label"
+                            >Phòng ban</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="department"
+                            disabled
+                          />
+                        </div>
+
+                        <!-- Chức vụ -->
+                        <div class="mb-3">
+                          <label for="position" class="form-label"
+                            >Chức vụ</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="position"
+                            disabled
+                          />
+                        </div>
+
+                        <!-- Công tác -->
+                        <div class="mb-3">
+                          <label for="work_status" class="form-label"
+                            >Công tác</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="work_status"
+                            disabled
+                          />
+                        </div>
+
+                        <!-- Trình độ học vấn -->
+                        <div class="mb-3">
+                          <label for="education" class="form-label"
+                            >Trình độ học vấn</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="education"
+                            disabled
+                          />
+                        </div>
+
+                        <!-- Trạng thái hôn nhân -->
+                        <div class="mb-3">
+                          <label for="marital_status" class="form-label"
+                            >Trạng thái hôn nhân</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="marital_status"
+                            disabled
+                          />
+                        </div>
+                        <a href="index.html">
+                          <button type="button" class="btn btn-primary">
+                            Quay lại
+                          </button>
+                        </a>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.col -->
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+      </div>
+      <!-- /.content-wrapper -->
+
+      <div id="footer"></div>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+      </aside>
+      <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../../resources/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="../../resources/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <!-- Bootstrap 4 -->
+    <script src="../../resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../../resources/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../resources/dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../resources/dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../../resources/dist/js/pages/dashboard.js"></script>
+    <script>
+      // Function to load HTML content
+      function loadLayout(id, file) {
+        fetch(file)
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById(id).innerHTML = html;
+          })
+          .catch((error) => console.error("Error loading file:", file, error));
+      }
+
+      // Load header, sidebar, and footer
+      loadLayout("header", "../layout/header.html");
+      loadLayout("sidebar", "../layout/sidebar.html");
+      loadLayout("footer", "../layout/footer.html");
+    </script>
+  </body>
+</html>

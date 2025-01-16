@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AdminLTE 3 | Dashboard</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="../../resources/plugins/fontawesome-free/css/all.min.css"
+    />
+    <!-- Ionicons -->
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../resources/dist/css/adminlte.min.css" />
+    <!-- overlayScrollbars -->
+    <link
+      rel="stylesheet"
+      href="../../resources/plugins/overlayScrollbars/css/OverlayScrollbars.min.css"
+    />
+  </head>
+  <body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+      <!-- Preloader -->
+      <div
+        class="preloader flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="animation__shake"
+          src="../../resources/dist/img/AdminLTELogo.png"
+          alt="AdminLTELogo"
+          height="60"
+          width="60"
+        />
+      </div>
+
+      <div id="header"></div>
+      <div id="sidebar"></div>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6 mb-3">
+                <h1 class="m-0">Danh sách nhân viên</h1>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="../dashboard/index.html">Trang chủ</a>
+                  </li>
+                  <li class="breadcrumb-item active">Nhân viên</li>
+                </ol>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="d-flex justify-content-between w-100">
+                      <!-- Tìm kiếm (đặt sát trái) -->
+                      <div class="input-group input-group-sm w-25">
+                        <div class="input-group-append">
+                          <button type="submit" class="btn btn-default">
+                            <i class="fas fa-search"></i>
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          name="table_search"
+                          class="form-control"
+                          placeholder="Tìm kiếm"
+                        />
+                      </div>
+                      <div>
+                        <!-- Nút Thêm nhân viên (đặt bên phải ô tìm kiếm) -->
+                        <a href="./create.html"
+                          ><button type="button" class="btn btn-primary ml-3">
+                            <i class="fas fa-user-plus"></i> Thêm nhân viên
+                          </button></a
+                        >
+
+                        <!-- Nút In -->
+                        <button type="button" class="btn btn-secondary ml-3">
+                          <i class="fas fa-print"></i> In
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- /.card-header -->
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>Mã nhân viên</th>
+                          <th>Họ và tên</th>
+                          <th>Phòng ban</th>
+                          <th>Chức vụ</th>
+                          <th>Công tác</th>
+                          <th>Chức năng</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>01</td>
+                          <td>Nguyễn Văn A</td>
+                          <td>HR</td>
+                          <td>Trường phòng</td>
+                          <td>Chi nhánh 1</td>
+                          <td>
+                            <a
+                              href="./detail.html"
+                              class="fa fa-info-circle text-success"
+                            ></a>
+                            <a
+                              href="./update.html"
+                              class="fa fa-pencil-alt text-warning mx-2"
+                            ></a>
+                            <a
+                              href="./delete.html"
+                              class="fa fa-trash text-danger"
+                            ></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                  <div class="card-footer clearfix">
+                    <ul class="pagination pagination-sm m-0 float-right">
+                      <li class="page-item">
+                        <a class="page-link" href="#">&laquo;</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">&raquo;</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /.card -->
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+      </div>
+      <!-- /.content-wrapper -->
+
+      <div id="footer"></div>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+      </aside>
+      <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../../resources/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="../../resources/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <!-- Bootstrap 4 -->
+    <script src="../../resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../../resources/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../resources/dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../resources/dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../../resources/dist/js/pages/dashboard.js"></script>
+    <script>
+      // Function to load HTML content
+      function loadLayout(id, file) {
+        fetch(file)
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById(id).innerHTML = html;
+          })
+          .catch((error) => console.error("Error loading file:", file, error));
+      }
+
+      // Load header, sidebar, and footer
+      loadLayout("header", "../layout/header.html");
+      loadLayout("sidebar", "../layout/sidebar.html");
+      loadLayout("footer", "../layout/footer.html");
+    </script>
+  </body>
+</html>
